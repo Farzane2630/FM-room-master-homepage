@@ -34,6 +34,7 @@ body {
 
     @media (min-width: $media-query) {
         flex-direction: row;
+        justify-content: flex-start;
         column-gap: 1.5rem;
     }
 
