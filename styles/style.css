@@ -2,6 +2,67 @@ body {
   font-family: "League Spartan", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  position: relative;
+  padding: 1.5rem;
+}
+@media (min-width: 45rem) {
+  .header {
+    flex-direction: row;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+}
+.header .nav .nav__list {
+  list-style: none;
+  display: none;
+}
+@media (min-width: 45rem) {
+  .header .nav .nav__list {
+    display: flex;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    color: hsl(0, 100%, 100%);
+  }
+}
+.header .nav .nav__list--show {
+  display: flex;
+  background-color: hsl(0, 100%, 100%);
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .nav .nav__link {
+  font-weight: 600;
+  position: relative;
+}
+.header .nav .nav__link:hover:after {
+  content: "";
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2rem;
+  display: block;
+  height: 0.2rem;
+  background-color: hsl(0, 100%, 100%);
+  bottom: -5px;
+}
+@media (min-width: 45rem) {
+  .header .nav__icon {
+    display: none;
+  }
+}
+
 .about__section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
