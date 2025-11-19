@@ -12,10 +12,28 @@ $Font-family: 'League Spartan', system-ui, -apple-system, "Segoe UI", Roboto, Ar
 // layout
 $media-query: 45rem;
 
-:root {
-    transition: {}
+// animatons
 
-    ;
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-100px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-1.5rem)
+    }
+
+    100% {
+        transform: translateX(0rem)
+    }
 }
 
 body {
@@ -36,6 +54,17 @@ body {
         flex-direction: row;
         justify-content: flex-start;
         column-gap: 1.5rem;
+
+    }
+
+    .logo__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: $media-query) {
+            width: fit-content;
+        }
     }
 
     .nav {
@@ -47,15 +76,21 @@ body {
                 display: flex;
                 column-gap: 2rem;
                 color: $White;
+
+
+                .nav__close__icon {
+                    display: none;
+                }
             }
         }
 
         .nav__list--show {
+            animation: slide-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
             display: flex;
             background-color: $White;
             justify-content: space-between;
             align-items: center;
-            width: 100vw;
+            width: 100%;
             padding-block: 2rem;
             padding-inline: 1.5rem;
             position: absolute;
@@ -77,11 +112,13 @@ body {
                 height: 0.2rem;
                 background-color: $White;
                 bottom: -5px;
+
+                animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both;
             }
         }
     }
 
-    .nav__icon {
+    .nav__menu__icon {
         @media (min-width: $media-query) {
             display: none;
         }
