@@ -11,8 +11,6 @@
       href="./images/favicon-32x32.png"
     />
     <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
@@ -79,12 +77,13 @@
       >
         <picture class="hero__img__container">
           <source
-            media="(min-width: 45rem)"
+            media="(min-width: 35rem)"
             srcset="images/desktop-image-hero-1.jpg" />
           <img
             src="images/mobile-image-hero-1.jpg"
             alt="Image of a shik interior decoration"
             class="hero__img"
+            fetchpriority="high"
         /></picture>
         <div class="hero__content">
           <h2 class="hero__title" id="hero-title">
