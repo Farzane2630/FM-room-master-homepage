@@ -145,6 +145,11 @@ body {
   font-weight: 500;
   margin-top: 1.25rem;
   color: hsl(0, 0%, 27%);
+  transition: gap 0.5s ease;
+}
+.header .hero .hero__button:hover {
+  gap: 2rem;
+  color: hsl(0, 0%, 63%);
 }
 @media (min-width: 45rem) {
   .header .hero {

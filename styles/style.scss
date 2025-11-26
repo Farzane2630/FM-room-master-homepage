@@ -171,6 +171,12 @@ body {
             font-weight: 500;
             margin-top: 1.25rem;
             color: $Grey-800;
+            transition: gap .5s ease;
+
+            &:hover {
+                gap: 2rem;
+                color: $Grey-500;
+            }
         }
 
         @media (min-width:$media-query) {
