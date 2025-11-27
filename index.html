@@ -82,13 +82,37 @@
         <picture class="hero__img__container">
           <source
             media="(min-width: 35rem)"
-            srcset="images/desktop-image-hero-1.jpg" />
+            srcset="images/desktop-image-hero-1.jpg"
+          />
           <img
             src="images/mobile-image-hero-1.jpg"
             alt="Image of a shik interior decoration"
             class="hero__img"
             fetchpriority="high"
-        /></picture>
+          />
+          <div class="hero__nav__container">
+            <button class="hero__nav__btn hero__nav__btn--left">
+              <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 0L1 12l12 12"
+                  stroke="#FFF"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button class="hero__nav__btn hero__nav__btn--right">
+              <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 0l12 12L1 24"
+                  stroke="#FFF"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </picture>
         <div class="hero__content">
           <h2 class="hero__title" id="hero-title">
             Discover innovative ways to decorate
