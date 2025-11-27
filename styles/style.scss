@@ -10,7 +10,7 @@ $Font-size: 1rem; // (paragraphs)
 $Font-family: 'League Spartan', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
 // layout
-$media-query: 45rem;
+$media-query: 40rem;
 
 // animatons
 @keyframes slide-bottom {
@@ -140,6 +140,10 @@ body {
                 gap: .04rem;
                 bottom: 0;
                 right: 0;
+
+                @media (min-width: $media-query) {
+                    right: -9rem;
+                }
 
                 .hero__nav__btn {
                     background-color: black;
