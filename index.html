@@ -81,14 +81,15 @@
       >
         <picture class="hero__img__container">
           <source
+            class="hero__desktop__img"
             media="(min-width: 35rem)"
             srcset="images/desktop-image-hero-1.jpg"
+            fetchpriority="high"
           />
           <img
             src="images/mobile-image-hero-1.jpg"
             alt="Image of a shik interior decoration"
-            class="hero__img"
-            fetchpriority="high"
+            class="hero__mobile__img"
           />
           <div class="hero__nav__container">
             <button class="hero__nav__btn hero__nav__btn--left">
