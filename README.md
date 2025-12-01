@@ -54,7 +54,7 @@ Users should be able to:
 Example of problematic code:
 
 ```
-<button type="button" class="nav__menu__icon"></button>
+<button type="button" class="nav__icon--open"></button>
 
 ```
 
@@ -67,7 +67,7 @@ Example of problematic code:
 ```
 <button
   type="button"
-  class="nav__menu__icon"
+  class="nav__icon--open"
   aria-label="Open navigation menu"
 >
   <img src="images/icon-hamburger.svg" alt="" />
@@ -77,7 +77,7 @@ Example of problematic code:
 ✔ Option 2 — Add visually hidden text
 
 ```
-<button type="button" class="nav__menu__icon">
+<button type="button" class="nav__icon--open">
   <span class="sr-only">Open menu</span>
   <img src="images/icon-hamburger.svg" alt="" />
 </button>
@@ -86,7 +86,7 @@ Example of problematic code:
 ✔ Option 3 — Use an SVG with a `<title>`
 
 ```
-<button type="button" class="nav__menu__icon">
+<button type="button" class="nav__icon--open">
   <svg aria-labelledby="menuTitle">
     <title id="menuTitle">Open menu</title>
     <path ... />

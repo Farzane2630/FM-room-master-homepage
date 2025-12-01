@@ -56,7 +56,7 @@ body {
   .header .nav .nav__list__container {
     display: flex;
   }
-  .header .nav .nav__list__container .nav__close__icon {
+  .header .nav .nav__list__container .nav__icon--close {
     display: none;
   }
 }
@@ -106,7 +106,7 @@ body {
   animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @media (min-width: 40rem) {
-  .header .nav__menu__icon {
+  .header .nav__icon--open {
     display: none;
   }
 }

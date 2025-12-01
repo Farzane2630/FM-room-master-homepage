@@ -1,6 +1,6 @@
-const menuHamIcon = document.querySelector(".nav__menu__icon");
+const menuHamIcon = document.querySelector(".nav__icon--open");
 const navMenu = document.querySelector(".nav__list__container");
-const closeMenuIcon = document.querySelector(".nav__close__icon");
+const closeMenuIcon = document.querySelector(".nav__icon--close");
 
 menuHamIcon.addEventListener("click", () => {
   navMenu.classList.add("nav__list__container--show");
