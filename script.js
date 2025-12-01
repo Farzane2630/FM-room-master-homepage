@@ -1,13 +1,13 @@
 const menuHamIcon = document.querySelector(".nav__menu__icon");
-const navMenu = document.querySelector(".nav__list");
+const navMenu = document.querySelector(".nav__list__container");
 const closeMenuIcon = document.querySelector(".nav__close__icon");
 
 menuHamIcon.addEventListener("click", () => {
-  navMenu.classList.add("nav__list--show");
+  navMenu.classList.add("nav__list__container--show");
 });
 
 closeMenuIcon.addEventListener("click", () => {
-  navMenu.classList.remove("nav__list--show");
+  navMenu.classList.remove("nav__list__container--show");
 });
 
 // hero__nav__btn functions

@@ -68,34 +68,45 @@ body {
     }
 
     .nav {
-        .nav__list {
-            list-style: none;
+        .nav__list__container {
             display: none;
-
             @media (min-width: $media-query) {
                 display: flex;
-                column-gap: 2rem;
-                color: $White;
-
-
                 .nav__close__icon {
                     display: none;
                 }
             }
         }
 
-        .nav__list--show {
-            animation: slide-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
+        .nav__list {
+            list-style: none;
             display: flex;
-            background-color: $White;
-            justify-content: space-between;
-            align-items: center;
+
+            @media (min-width: $media-query) {
+                column-gap: 2rem;
+                color: $White;
+            }
+        }
+
+        .nav__list__container--show {
             width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 2rem;
+            animation: slide-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
+            background-color: $White;
             padding-block: 2rem;
             padding-inline: 1.5rem;
             position: absolute;
             top: 0;
             left: 0;
+
+            .nav__list {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
 
         .nav__link {
@@ -149,7 +160,7 @@ body {
                     padding: 1.5rem 1.75rem;
                     transition: background-color .5s ease-in;
 
-                    &:hover{
+                    &:hover {
                         background-color: $Grey-800;
                     }
                 }
